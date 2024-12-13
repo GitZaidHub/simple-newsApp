@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 45px;
+    height: 40px;
+}
+.link-a{
+    color: black;
+}
+
+.link-b{
+    color: black;
+}
+
+.link-c{
+    color: black;
+}
+
+.link-d{
+    color: black;
+}
+
+.link-e{
+    color: black;
+}
+.link-a:hover{
+}
