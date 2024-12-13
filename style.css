@@ -6,6 +6,7 @@
     width: 45px;
     height: 40px;
 }
+
 .link-a{
     color: black;
 }
@@ -25,5 +26,6 @@
 .link-e{
     color: black;
 }
+
 .link-a:hover{
 }
