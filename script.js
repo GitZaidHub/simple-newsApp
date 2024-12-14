@@ -59,3 +59,6 @@ function bindData(articles) {
     });
     
 }
+function itemClickedNav(id){
+    fetchNews(id);
+}
