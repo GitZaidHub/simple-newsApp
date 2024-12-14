@@ -26,7 +26,10 @@
 .link-e{
     color: black;
 }
-
+.nav-link.active{
+    color: blueviolet;
+    font-weight: 700;
+}
 .newz-title{
     font-size: medium;
 }

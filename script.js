@@ -59,6 +59,22 @@ function bindData(articles) {
     });
     
 }
+let currSeleCls = null;
 function itemClickedNav(id){
     fetchNews(id);
+    const navItem = document.getElementById(id);
+    currSeleCls?.classList.remove("active")
+    currSeleCls = navItem;
+    currSeleCls.classList.add("active")
 }
+
+const searchButton = document.getElementById("search-button");
+const searchText = document.getElementById("search-text");
+
+searchButton.addEventListener("click",()=>{
+    const query = searchText.value;
+    if(!query) return ;
+    fetchNews(query);
+    currSeleCls?.classList.remove("active")
+
+})
