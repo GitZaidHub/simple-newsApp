@@ -42,6 +42,12 @@ function bindData(articles) {
             timeStyle: "short",  // Format for the time
         });
         cardClone.querySelector(".text-muted").textContent = date;
+        cardClone.querySelector(".source").textContent = article.source.name
+        const sourceButton = cardClone.querySelector(".source");
+        sourceButton.onclick = () => {
+            window.open(article.url, "_blank");
+        };
+        
     
         // Set the article description
         cardClone.querySelector(".card-text").textContent =
