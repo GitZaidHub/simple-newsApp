@@ -42,6 +42,7 @@ function bindData(articles) {
             timeStyle: "short",  // Format for the time
         });
         cardClone.querySelector(".text-muted").textContent = date;
+        cardClone.querySelector(".title").textContent = article.title;
         cardClone.querySelector(".source").textContent = article.source.name
         const sourceButton = cardClone.querySelector(".source");
         sourceButton.onclick = () => {
@@ -51,7 +52,7 @@ function bindData(articles) {
     
         // Set the article description
         cardClone.querySelector(".card-text").textContent =
-            article.description || "No description available.";
+            article.description.substr(0,150) || "No description available.";
     
         // Append the cloned card to the container
         cardsContainer.appendChild(cardClone);
